@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+</head>
+<style>
+    /* CSS Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('background.jpg');
+        font-family: cursive;
+        font-weight: bold;
+    }
+    .left{
+        display: inline-block;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 20px;
+        left: 34px;
+    }
+    .left img{
+        height: 90px;
+        filter: invert(100%);
+    }
+    .left div{
+        line-height:19px ;
+        font-size:18px ;
+        text-align: center;
+        color: white;
+    }
+    .mid{
+        display: block;
+       /* border: 2px solid green;*/
+        margin: 29px auto;
+        width: 50%;
+    }
+    .right{
+        display: inline-block;
+       /* border: 2px solid yellow;*/
+        position: absolute;
+        top: 48px;
+        right:34px
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        
+    }
+    .navbar li a{
+        text-decoration: none;
+        color:white;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: gray;
+
+    }
+    #btn{
+        margin: 0px 5px;
+        background-color: black;
+        color:white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    #btn:hover{
+        background-color: gray;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 120px 350px;
+        padding: 75px;
+        border-radius: 24px;
+        color: white;
+        text-align: center;
+    }
+    .formgroup input{
+        text-align: center;
+        display: block;
+        width:508px;
+        padding:1px;
+        border: 2px solid black;
+        margin: 3px auto;
+        border-radius: 8px;
+        font-size: 25px;
+        font-family: cursive;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="gym.jpeg" alt="">
+            <div>Fitness Gym</div>
+        </div>
+        <!--mid box for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FitnessCalculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button id="btn">Call Us Now</button>
+            <button id="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of Delhi now</h1>
+        <form action="/action.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name here">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age here">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender here">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality here">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Mobile No. here">
+            </div>
+            <button id="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
